@@ -3,7 +3,7 @@ FROM debian:buster
 
 RUN apt-get update -qqq
 
-RUN apt-get install -y curl xz-utils make perl python3 unzip wget gawk python3-distutils
+RUN apt-get install -y curl xz-utils make perl python3 unzip wget gawk python3-distutils git-core>=1.7.12.2 rsync
 RUN mkdir /tmp/openwrt
 RUN cd /tmp/openwrt
 
